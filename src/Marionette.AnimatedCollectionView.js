@@ -1,5 +1,5 @@
 /*! 
- * Marionette.AnimatedCollectionView v0.1.2
+ * Marionette.AnimatedCollectionView v0.1.3
  * @web: https://github.com/medialize/Marionette.AnimatedCollectionView/
  * @author: Rodney Rehm - http://rodneyrehm.de/en/
  */
@@ -20,7 +20,7 @@
   'use strict';
 
   function decorateAnimatedCollectionView(View, options) {
-      var o = $.extend({}, decorateAnimatedAddRemove.defaults, options || {});
+      var o = $.extend(true, {}, decorateAnimatedCollectionView.defaults, options || {});
       var _removeChildView = View.prototype.removeChildView;
       var _initialize = View.prototype.initialize;
 
@@ -45,14 +45,14 @@
           },
 
           _animateRemove: function(view) {
-              var promise = view.$el.animationEndPromise(options.promise);
+              var promise = view.$el.animationEndPromise(o.promise);
               view.$el.addClass(o.remove);
               return promise;
           }
       });
   }
   
-  decorateAnimatedCollectionView.version = '0.1.2';
+  decorateAnimatedCollectionView.version = '0.1.3';
   decorateAnimatedCollectionView.defaults = {
       add: 'item-adding',
       remove: 'item-removing',
