@@ -1,0 +1,37 @@
+{
+  "name": "marionette.animatedcollectionview",
+  "version": "0.1.0",
+  "description": "Allow animating insertion/removal of ItemViews in a Marionette CollectionView",
+  "main": "src/Marionette.AnimatedCollectionView.js",
+  "files": [
+    "src/*.js"
+  ],
+  "scripts": {
+    "test": "grunt test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/medialize/Marionette.AnimatedCollectionView.git"
+  },
+  "keywords": [
+    "Marionette",
+    "Backbone",
+    "CollectionView",
+    "CSS-Animation",
+    "CSS-Transition"
+  ],
+  "author": {
+    "name": "Rodney Rehm",
+    "url": "http://rodneyrehm.de"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medialize/Marionette.AnimatedCollectionView/issues"
+  },
+  "homepage": "https://github.com/medialize/Marionette.AnimatedCollectionView",
+  "devDependencies": {
+    "jshint-stylish": "~0.1.5",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.8.0"
+  }
+}
