@@ -52,6 +52,10 @@ Marionette.AnimatedCollectionView is published under the [MIT License](http://op
 
 ## Changelog
 
+### 0.1.2 (June 23rd 2014) ###
+
+* … still too dumb for package managers…
+
 ### 0.1.1 (June 23rd 2014) ###
 
 * Of course I'm too dumb for package managers…

@@ -1,5 +1,5 @@
 /*! 
- * Marionette.AnimatedCollectionView v0.1.1
+ * Marionette.AnimatedCollectionView v0.1.2
  * @web: https://github.com/medialize/Marionette.AnimatedCollectionView/
  * @author: Rodney Rehm - http://rodneyrehm.de/en/
  */
@@ -8,10 +8,10 @@
   // https://github.com/umdjs/umd/blob/master/returnExports.js
   if (typeof exports === 'object') {
     // Node
-    module.exports = factory(require('jquery', 'jQuery.transitionEndPromise'));
+    module.exports = factory(require('jquery', 'jQuery-transitionEndPromise'));
   } else if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['jquery', 'jQuery.transitionEndPromise'], factory);
+    define(['jquery', 'jQuery-transitionEndPromise'], factory);
   } else {
     // Browser globals (root is window)
     factory(root.jQuery);
@@ -52,7 +52,7 @@
       });
   }
   
-  decorateAnimatedCollectionView.version = '0.1.1';
+  decorateAnimatedCollectionView.version = '0.1.2';
   decorateAnimatedCollectionView.defaults = {
       add: 'item-adding',
       remove: 'item-removing',
