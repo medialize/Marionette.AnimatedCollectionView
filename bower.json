@@ -6,7 +6,7 @@
   "main": "src/Marionette.AnimatedCollectionView.js",
   "dependencies": {
     "jquery": ">=1.7.0",
-    "jQuery.transitionEndPromise": ">=0.1.0",
+    "jQuery.transitionEndPromise": ">=0.1.0"
   },
   "moduleType": [
     "amd",
