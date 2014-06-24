@@ -28,6 +28,11 @@
   };
 
   Sequence.prototype.push = function(callback) {
+    if (!this.options.stagger) {
+      callback();
+      return;
+    }
+    
     this._buffer.push(callback);
     this.run();
   };
@@ -49,7 +54,7 @@
     this._running = true;
     var current = this._buffer.shift();
     current();
-    setTimeout(this._run, this.options.drag);
+    setTimeout(this._run, this.options.stagger);
   };
 
 
@@ -104,7 +109,7 @@
     add: 'item-adding',
     remove: 'item-removing',
     // options from jQuery-transitionEndEvent
-    drag: 100,
+    stagger: 100,
     promise: {
       resolveTimeout: 1000
     }

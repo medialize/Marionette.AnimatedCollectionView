@@ -18,7 +18,7 @@ var AnimatedListView = decorateAnimatedCollectionView(ListView, {
   remove: 'item-removing',
   // delay in milliseconds to wait in between animating mutliple items of a collection
   // animate element 1, wait, animate element 2, wait, …
-  drag: 100,
+  stagger: 100,
   // automatic promise resolution
   promise: {
     // options from jQuery-transitionEndEvent
@@ -53,6 +53,10 @@ Marionette.AnimatedCollectionView is published under the [MIT License](http://op
 
 
 ## Changelog
+
+### 0.1.5 (June 24th 2014) ###
+
+* renaming drag option to stagger option - I clearly have no idea what I'm doing.
 
 ### 0.1.4 (June 24th 2014) ###
 
