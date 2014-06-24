@@ -16,6 +16,9 @@ var AnimatedListView = decorateAnimatedCollectionView(ListView, {
   add: 'item-adding',
   // CSS class name to add for animating DOM removal
   remove: 'item-removing',
+  // delay in milliseconds to wait in between animating mutliple items of a collection
+  // animate element 1, wait, animate element 2, wait, …
+  drag: 100,
   // automatic promise resolution
   promise: {
     // options from jQuery-transitionEndEvent
@@ -29,8 +32,7 @@ var AnimatedListView = decorateAnimatedCollectionView(ListView, {
 
 * documentation and tests
 * API to differentiate between initial render and later additions
-* API to allow "drag" (a delay between each item to animate in)
-
+* API for animated sorting
 
 ## Install
 
