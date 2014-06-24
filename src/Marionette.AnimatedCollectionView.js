@@ -1,5 +1,5 @@
 /*!
- * Marionette.AnimatedCollectionView v0.1.3
+ * Marionette.AnimatedCollectionView v0.1.4
  * @web: https://github.com/medialize/Marionette.AnimatedCollectionView/
  * @author: Rodney Rehm - http://rodneyrehm.de/en/
  */
@@ -99,7 +99,7 @@
     });
   }
 
-  decorateAnimatedCollectionView.version = '0.1.3';
+  decorateAnimatedCollectionView.version = '0.1.4';
   decorateAnimatedCollectionView.defaults = {
     add: 'item-adding',
     remove: 'item-removing',

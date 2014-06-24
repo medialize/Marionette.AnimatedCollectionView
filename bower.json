@@ -1,6 +1,6 @@
 {
   "name": "Marionette.AnimatedCollectionView",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/medialize/Marionette.AnimatedCollectionView",
   "description": "Allow animating insertion/removal of ItemViews in a Marionette CollectionView",
   "main": "src/Marionette.AnimatedCollectionView.js",

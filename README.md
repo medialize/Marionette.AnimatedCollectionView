@@ -54,6 +54,11 @@ Marionette.AnimatedCollectionView is published under the [MIT License](http://op
 
 ## Changelog
 
+### 0.1.4 (June 24th 2014) ###
+
+* adding drag option
+
+
 ### 0.1.3 (June 23rd 2014) ###
 
 * fixing bad options access
